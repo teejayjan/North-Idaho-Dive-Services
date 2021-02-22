@@ -1,48 +1,21 @@
 <%- include("header"); %>
-<!-- code for carousel adapted from: https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9 -->
-    <!-- <div class="carousel-wrapper">
-        <div class="carousel">
-            <img src="../public/lake1.jpg" alt="" class="carousel-photo initial">
-            <img src="../public/lake2.jpg" alt="" class="carousel-photo">
-            <img src="../public/lake3.jpg" alt="" class="carousel-photo">
 
-            <div class="carousel-button--next"></div>
-            <div class="carousel-button--prev"></div>
-        </div>
-    </div> -->
-
-    <!-- <section class="section slideshow-container">
-        <div class="container">
-            <div class="slides fade">
-                <img class="slideshow-img" src="../public/lake1.jpg" alt="">
+    <section class="hero is-medium has-carousel">
+        <div id="carousel" class="hero-carousel">
+            <div class="carousel-item">
+                <img class="is-background" src="../public/bayview1.jpg" alt="">
             </div>
-            <div class="columns">
-                <div class="column is-8-desktop is-offset-2-desktop">
-                    <h1 class="title is-1">
-                        Welcome to North Idaho Dive Services!
-                    </h1>
-                    <h2 class="subtitle is-4 is-italic">
-                        Serving the North Idaho community since <strong>2018</strong>.
-                    </h2>
-                    <h3 class="subtitle is-5">
-                        Ready to get to work?
-                    </h3>
-                    <p class="control">
-                        <a class="button is-medium is-dark" href="/">
-                            <strong class="has-text-weight-semibold">Schedule a Survey</strong>
-                        </a>
-                    </p>
-                </div>
+            <div class="carousel-item">
+                <img class="is-background" src="../public/bayview2.jpg" alt="">
             </div>
-
+            <div class="carousel-item">
+                <img class="is-background" src="../public/bayview3.jpg" alt="">
+            </div>
         </div>
-    </section> -->
-
-
-    <!-- <section id="heroCarousel" class="hero is-medium is-light">
+        <div class="hero-head"></div>
         <div class="hero-body">
             <div class="container">
-                <div class="columns">
+                <div id="welcomeHeader" class="columns">
                     <div class="column is-8-desktop is-offset-2-desktop">
                         <h1 class="title is-1">
                             Welcome to North Idaho Dive Services!
@@ -54,7 +27,7 @@
                             Ready to get to work?
                         </h3>
                         <p class="control">
-                            <a class="button is-medium is-dark" href="/">
+                            <a class="button is-medium is-primary" href="/">
                                 <strong class="has-text-weight-semibold">Schedule a Survey</strong>
                             </a>
                         </p>
@@ -62,7 +35,8 @@
                 </div>
             </div>
         </div>
-    </section> -->
+        <div class="hero-foot"></div>
+    </section>
     <section class="section">
         <div class="container">
             <div class="columns is-centered">
