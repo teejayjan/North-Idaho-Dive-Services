@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+.title {
+    font-family: 'Merriweather', serif;
+}
+
+#aboutHeadshot {
+    border-radius: 8px;
+}
+
+#aboutScroll {
+    overflow: auto;
+    max-height: 31rem;
+}
+
