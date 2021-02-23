@@ -19,16 +19,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
-//carousel from: https://bulma-carousel.onrender.com
-bulmaCarousel.attach('#carousel', {
-    initialSlide: 0,
-    duration: 400,
-    autoplaySpeed: 4000,
-    infinite: true,
-    breakpoints: [{ changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
-    { changePoint: 640, slidesToShow: 1, slidesToScroll: 1 },
-    { changePoint: 768, slidesToShow: 1, slidesToScroll: 1 }]
-});
+// carousel stuff
+document.addEventListener("DOMContentLoaded", () => {
+    // checks if we're on a page with carousel (home)
+    if (document.querySelector("#carousel")) {
+        // hidden by default, keeps images from flashing until we're done loading the page
+        document.querySelector("#carousel").classList.remove("hide-carousel")
+
+        //carousel from: https://bulma-carousel.onrender.com
+        bulmaCarousel.attach('#carousel', {
+            initialSlide: 0,
+            duration: 400,
+            autoplaySpeed: 4000,
+            infinite: true,
+            breakpoints: [{ changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
+            { changePoint: 640, slidesToShow: 1, slidesToScroll: 1 },
+            { changePoint: 768, slidesToShow: 1, slidesToScroll: 1 }]
+        });
+    }
+})
 
 //so the user can close modal
 document.addEventListener("DOMContentLoaded", () => {

@@ -23,11 +23,13 @@ app.get("/about", (req, res) => {
     res.render("about")
 })
 
-// app.post("/", (req, res) => {
-//     const info = req.body;
-//     console.log(info);
-//     res.redirect("/")
-// })
+app.get("/testimonials", (req, res) => {
+    res.render("testimonials")
+})
+
+app.get("/service", (req, res) => {
+    res.render("service")
+})
 
 app.listen(app.get("port"), function () {
     console.log(`Express started on localhost:${app.get("port")}; press Ctrl-C to terminate.`)

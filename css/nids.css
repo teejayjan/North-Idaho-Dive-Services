@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 .title {
-    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #aboutHeadshot {
@@ -27,4 +27,18 @@
 
 #welcomeHeader {
     background: rgba(220, 220, 221, 0.9);
+}
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+.hide-carousel {
+    display: none;
 }
