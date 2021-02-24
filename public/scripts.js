@@ -52,6 +52,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
+// auto-format phone number: https://tomduffytech.com/how-to-format-phone-number-in-javascript/
+function phoneNumberFormatter() {
+    const inputField = document.getElementById("phoneInput");
+    const formattedInputValue = formatPhoneNumber(inputField.value);
+    inputField.value = formattedInputValue;
+}
+
+function formatPhoneNumber(value) {
+    if (!value) return value;
+    const phoneNumber = value.replace(/[^\d]/g, "");
+    const phoneNumberLength = phoneNumber.length;
+    if (phoneNumberLength < 4) return phoneNumber;
+    if (phoneNumberLength < 7) {
+        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+    }
+    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+        3,
+        6
+    )}-${phoneNumber.slice(6, 10)}`;
+}
+document.getElementById("phoneInput").addEventListener("input", () => {
+    phoneNumberFormatter();
+})
+
 // show modal and submit POST to external form server
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
@@ -62,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
         event.preventDefault();
         axios({
-            url: "http://httpbin.org/post",
+            url: "https://formspree.io/f/mrgovnwa",
             method: "post",
             headers: {
                 "Accept": "application/json"

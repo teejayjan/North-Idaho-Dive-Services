@@ -13,17 +13,17 @@
     max-height: 31rem;
 }
 
-.is-background {
+/* .is-background {
     object-fit: scale-down;
     margin: auto;
     display: block;
-}
+} */
 
-.carousel-item {
+/* .carousel-item {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #welcomeHeader {
     background: rgba(220, 220, 221, 0.9);
@@ -41,4 +41,8 @@ body.fade-out {
 
 .hide-carousel {
     display: none;
+}
+
+.is-not-error {
+    display:none;
 }
