@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 details: `${formData.get("details")}`
             }
         }).then((response) => {
-            console.log(response)
+            // console.log(response)
             const modal = document.querySelector("#modal");
             modal.classList.add("is-active");
         })
