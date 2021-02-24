@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         bulmaCarousel.attach('#carousel', {
             initialSlide: 0,
             duration: 400,
+            autoplay: true,
             autoplaySpeed: 4000,
             infinite: true,
             breakpoints: [{ changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
@@ -104,9 +105,4 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.classList.add("is-active");
         })
     })
-})
-
-// console message for debugging script :) 
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("script loaded")
 })
