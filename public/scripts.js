@@ -97,7 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 email: `${formData.get("email")}`,
                 phone: `${formData.get("phone")}`,
                 location: `${formData.get("location")}`,
-                details: `${formData.get("details")}`
+                details: `${formData.get("details")}`,
+                method: `${formData.get("method")}`,
+                time: `${formData.get("time")}`,
+                hear: `${formData.get("hear")}`,
             }
         }).then((response) => {
             // console.log(response)

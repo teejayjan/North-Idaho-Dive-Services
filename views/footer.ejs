@@ -51,6 +51,46 @@
                 </div>
             </div>
 
+            <div class="field">
+                <label class="label">How did you hear about us?*</label>
+                <div class="control">
+                    <input id="hearInput" name="hear" class="input" type="text" required>
+                </div>
+            </div>
+
+            <div class="container mb-4">
+                <div class="columns is-centered">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">When is the best time to contact you?*</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select name="time" required>
+                                        <option value="morning">Morning: 9am to Noon</option>
+                                        <option value="afternoon">Afternoon: Noon to 5pm</option>
+                                        <option value="evening">Evening: 5pm to 8pm</option>
+                                        <option value="anytime">No Preference</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label">Preferred Method of Contact*</label>
+                        <div class="control">
+                            <div class="select">
+                                <select name="method" required>
+                                    <option value="Phone Call">Phone Call</option>
+                                    <option value="Email">Email</option>
+                                    <option value="Text">Text</option>
+                                    <option value="No Preference">No Preference</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="field is-grouped">
                 <div class="control">
                     <input class="button is-primary" type="submit" value="Submit">
@@ -75,7 +115,8 @@
         <section class="modal-card-body has-text-centered">
             <p class="title is-5"> We received your message! We'll be in touch soon.</p>
             <p class="subtitle is-5"> If you have any questions, please feel free to <a
-                    href="tel:1-805-331-3172">call</a> or <a href="mailto: mitch@northidahodiveservices.com">email</a>!</p>
+                    href="tel:1-805-331-3172">call</a> or <a href="mailto: mitch@northidahodiveservices.com">email</a>!
+            </p>
         </section>
     </div>
     <button id="modalClose" class="modal-close is-large" aria-label="close">Close</button>
